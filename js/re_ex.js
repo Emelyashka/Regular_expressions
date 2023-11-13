@@ -6,3 +6,10 @@ function task1()
     if(URL) alert ("Вы ввели корректный URL адрес");
     else alert ("Вы ввели некорректный URL адрес");
 }
+function task2()
+{
+    let re=/^([_a-zA-Z\$])([a-zA-Z]|\d_\$){1,254}$/;
+    let str=prompt("Введите переменную");
+    if (re.test(str)==1) alert ("Вы ввели корректную переменную");
+    else alert ("Вы ввели некорректную переменную");
+}

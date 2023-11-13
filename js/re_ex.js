@@ -13,3 +13,10 @@ function task2()
     if (re.test(str)==1) alert ("Вы ввели корректную переменную");
     else alert ("Вы ввели некорректную переменную");
 }
+function task3()
+{
+    let re=/^[a-zA-Z\d]{1,}$/
+    let str=prompt("Введите строку");
+    if (re.test(str)) alert ("Ввод корректен");
+    else alert ("Ввод некорректен");
+}

@@ -28,3 +28,13 @@ function task4()
     if (arr==null) alert ("Строка корректна");
     else alert ("Строка некорректна");
 }
+function task5()
+{
+    let reSymbol=/[a-zA-Z]\d/g;
+    let reDigit=/\d/g;
+    let str=prompt ("Введите строку");
+    let numS=str.match(reSymbol);
+    if (numS!=null) alert (`Symbol ${numS.length}`);
+    let numD=str.match(reDigit);
+    if (numD!=null) alert (`Digit ${numD.length}`);
+}

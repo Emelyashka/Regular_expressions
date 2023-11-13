@@ -20,3 +20,11 @@ function task3()
     if (re.test(str)) alert ("Ввод корректен");
     else alert ("Ввод некорректен");
 }
+function task4()
+{
+    let re=/[\W\d]{10,}/g;
+    let str=prompt("Введите строку");
+    let arr=str.match(re);
+    if (arr==null) alert ("Строка корректна");
+    else alert ("Строка некорректна");
+}

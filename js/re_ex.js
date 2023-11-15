@@ -36,5 +36,5 @@ function task5()
     let numS=str.match(reSymbol);
     if (numS!=null) alert (`Symbol ${numS.length}`);
     let numD=str.match(reDigit);
-    if (numD!=null) alert (`Digit ${numD.length}`);
+    if (numD!=null) alert (`Digit ${numD.length}`); //vjhg
 }
